@@ -590,6 +590,7 @@ body {
   margin-right: 12px;
   background-color: transparent;
   color: var(--color-logo-theme-dark);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-input::placeholder {
   font-size: 16px;
@@ -617,13 +618,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
 .footer-form-btn:hover,
 .footer-form-btn:focus,
 .modal-form-btn:hover,
@@ -638,6 +632,11 @@ body {
 }
 .footer-form {
   display: flex;
+}
+.footer-form-input:hover,
+.footer-form-input:focus {
+  border-color: var(--accent-color);
+
 }
 /* ============== /FOOTER ============== */
 
