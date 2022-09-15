@@ -34,6 +34,7 @@
 button {
   cursor: pointer;
   font-family: inherit;
+  padding: 0;
 }
 
 h1,
@@ -206,7 +207,9 @@ body {
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/bg-img.jpg');
-  background-size: cover;
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--bg-hero-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -587,11 +590,16 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-right: 12px;
+  
   background-color: transparent;
   color: var(--color-logo-theme-dark);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-form-label {
+  margin-right: 12px;
+
+}
+
 .footer-form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -740,8 +748,14 @@ body {
 .modal-input-wrap {
   display: block;
   position: relative;
-  margin-bottom: 10px;
+  
 }
+.modal-form-field {
+  margin-bottom: 10px;
+
+}
+
+
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -767,15 +781,18 @@ body {
 
 .modal-form-btn {
   align-self: center;
+  width: 200px;
+  height: 50px;
   background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
-    padding: 10px 52px;
+    padding: 10px 10px;
     letter-spacing: 0.06em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
       color: var(--light-text-color);
+      
 }
 
 .modal-form-check {
